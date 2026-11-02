@@ -1,6 +1,6 @@
 {
   "name": "@alanzhao/dsh-web-search-gemini",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "DeepSeek Harness web search provider backed by Gemini grounding through an Anthropic-compatible CLIProxyAPI endpoint.",
   "keywords": [

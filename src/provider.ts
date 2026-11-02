@@ -10,7 +10,7 @@ import { applyResolved, mapResponse } from './map.js'
 import { resolveRedirects } from './resolve.js'
 
 export const PROVIDER_ID = 'cpa-gemini'
-export const USER_AGENT = 'dsh-web-search-gemini/0.1.0'
+export const USER_AGENT = 'dsh-web-search-gemini/0.1.1'
 
 /** Options for ONE search, snapshotted at its entry. */
 export interface ProviderOptions {
@@ -63,7 +63,7 @@ export class GeminiSearchProvider implements WebSearchProvider {
         role: 'user',
         content: [{
           type: 'text',
-          text: `Perform a web search for the query: ${request.query}\nThen give a concise factual summary of what the sources say, in the language of the query.`,
+          text: `Perform a web search for the query: ${request.query}\nThen list the key facts the sources state, as terse bullet points in the language of the query. Keep every exact number, date and name; no tables, headings, background or commentary.`,
         }],
       }],
       tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: options.maxUses }],

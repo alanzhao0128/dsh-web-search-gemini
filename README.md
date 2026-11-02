@@ -86,6 +86,7 @@ npm install && npm run build
 
 - **不要打开 DSH「网页搜索」设置页的开关。** 它会把 `searchProvider` / `fetchProvider` 改成 DeepSeek 的收费 Search / Fetch API。该页面只管理官方提供方。
 - **没有自动回退。** 选中的提供方不可用时，`web_search` 直接报错，不会改用其他提供方。
+- **偶尔会超时。** `gemini-3.8-flash-high` 即使 `thinking: disabled` 仍有隐藏推理，单次搜索 20–70 秒且波动大。DSH 的 `web_search` 一次调用会并发执行多个查询，共用 60 秒时限（写在 DSH 官方 agent preset 里，只能整体覆盖 preset 才能改），其中最慢的一个超时就会让整次调用失败，模型通常会自行重试。换 `gemini-3-flash` 只要 3–4 秒，但总结更浅，数字可能出错。
 - **部分 Anthropic 兼容网关会清空 `web_search` 工具的参数。** 现象是模型发出的调用参数为 `{}`，报 `missing required property "queries"`。这发生在主模型返回工具调用的那一段，与本插件无关；换用其他渠道作为主模型即可。
 
 ## 回滚

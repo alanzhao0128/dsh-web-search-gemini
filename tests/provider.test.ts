@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'node:test'
 import { WebError } from '@deepseek-ai/dsh-web'
-import { GeminiSearchProvider } from '../src/provider.ts'
+import { GeminiSearchProvider, USER_AGENT } from '../src/provider.ts'
 import type { ProviderOptions } from '../src/provider.ts'
 
 const fixture = (name: string) => readFileSync(new URL(`./fixtures/${name}.json`, import.meta.url), 'utf8')
@@ -58,11 +58,11 @@ test('request wire: headers, body, recorded event without secrets', async () => 
   assert.equal(headers['x-api-key'], 'test-key')
   assert.equal(headers['authorization'], 'Bearer test-key')
   assert.equal(headers['anthropic-version'], '2023-06-01')
-  assert.equal(headers['user-agent'], 'dsh-web-search-gemini/0.1.0')
+  assert.equal(headers['user-agent'], USER_AGENT)
   const body = JSON.parse(seen!.init.body as string)
   assert.deepEqual(body.tools, [{ type: 'web_search_20250305', name: 'web_search', max_uses: 2 }])
   assert.deepEqual(body.thinking, { type: 'disabled' })
-  assert.equal(body.messages[0].content[0].text, 'Perform a web search for the query: Rust 2026 edition release date\nThen give a concise factual summary of what the sources say, in the language of the query.')
+  assert.equal(body.messages[0].content[0].text, 'Perform a web search for the query: Rust 2026 edition release date\nThen list the key facts the sources state, as terse bullet points in the language of the query. Keep every exact number, date and name; no tables, headings, background or commentary.')
   assert.equal(recorded.length, 1)
   assert.ok(!JSON.stringify(recorded).includes('test-key'))
 })
