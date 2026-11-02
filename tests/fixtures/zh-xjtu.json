@@ -1,0 +1,259 @@
+{
+ "id": "LfTnaqmmJZOA3boP98a_YQ",
+ "type": "message",
+ "role": "assistant",
+ "model": "gemini-3.8-flash-n",
+ "content": [
+  {
+   "type": "server_tool_use",
+   "id": "srvtoolu_1793586232428084696",
+   "name": "web_search",
+   "input": {
+    "query": "西安交通大学 新闻"
+   }
+  },
+  {
+   "type": "web_search_tool_result",
+   "tool_use_id": "srvtoolu_1793586232428084696",
+   "content": [
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "xjtu.edu.cn",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHrnldYFDnLB5kVVmaKROL96--JEoDRm3J-bW5Z0_YuJ1yuc0sTRNjkMN0lwacIto2XFEl1hR4t2OrYozU4-LcqnMwggbaqEHEYIIfCU8="
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "xjtu.edu.cn",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2QRn_WEdfQqGbqTcBDCDS-fXWGMee7e_NEETACjSHUtmkT2oIizSnx85TUEaO4C666Nm_Ah9Hf4t_obtHmrWKP2qP-KvAV-Tg4TBGbm7CMVsuq3N9"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "thecover.cn",
+     "url": "https://www.thecover.cn/news/8GdDN26M9LSH90qSdq8Jkw=="
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "xjtu.edu.cn",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGopYdMrWOJ7Yl8i8NqUt1EOkmotCYFqk5oSJCycUuqpalibRR9KxN1mOQGMIwt0HuL8FmQuOBoQuEUzfOnd_tXFelHTlXVcLLRrSdSuQ=="
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "xjtu.edu.cn",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDlEf90-DbfAWtJBrUI0WA3aIFOQNTQKYFYimhV3duXmQ0a7HPXGJAxx8eoK2MBNEdqhS2pfY-drTU7spnsi7vwtTgNaEjnt8_n14XvR517sXD2kkj_g=="
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "eol.cn",
+     "url": "https://www.eol.cn/news/dongtai/202610/t20261030_2788625.shtml"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "近期西安交通大学的重要新闻与动态主要涵盖学术科研突破、前沿论坛、产教融合及校务动态等方面",
+   "citations": [
+    {
+     "cited_text": "近期西安交通大学的重要新闻与动态主要涵盖学术科研突破、前沿论坛、产教融合及校务动态等方面",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHrnldYFDnLB5kVVmaKROL96--JEoDRm3J-bW5Z0_YuJ1yuc0sTRNjkMN0lwacIto2XFEl1hR4t2OrYozU4-LcqnMwggbaqEHEYIIfCU8="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "：\n\n---\n\n### 一、 学术科研最新突破\n* **材料与物理领域**：\n  * "
+  },
+  {
+   "type": "text",
+   "text": "**物理学院**刘晓龙特聘研究员等在纯相 Q-2D/FA-3D 锡基钙钛矿异质结研究方向取得阶段性进展",
+   "citations": [
+    {
+     "cited_text": "**物理学院**刘晓龙特聘研究员等在纯相 Q-2D/FA-3D 锡基钙钛矿异质结研究方向取得阶段性进展",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHrnldYFDnLB5kVVmaKROL96--JEoDRm3J-bW5Z0_YuJ1yuc0sTRNjkMN0lwacIto2XFEl1hR4t2OrYozU4-LcqnMwggbaqEHEYIIfCU8="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n  * "
+  },
+  {
+   "type": "text",
+   "text": "**材料学院**在非线性光磁耦合理论及计算方面取得新突破",
+   "citations": [
+    {
+     "cited_text": "**材料学院**在非线性光磁耦合理论及计算方面取得新突破",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHrnldYFDnLB5kVVmaKROL96--JEoDRm3J-bW5Z0_YuJ1yuc0sTRNjkMN0lwacIto2XFEl1hR4t2OrYozU4-LcqnMwggbaqEHEYIIfCU8="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n  * "
+  },
+  {
+   "type": "text",
+   "text": "**电信学部/物理学院**梁言生、雷铭团队在大规模超表面智能设计领域取得新进展",
+   "citations": [
+    {
+     "cited_text": "**电信学部/物理学院**梁言生、雷铭团队在大规模超表面智能设计领域取得新进展",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2QRn_WEdfQqGbqTcBDCDS-fXWGMee7e_NEETACjSHUtmkT2oIizSnx85TUEaO4C666Nm_Ah9Hf4t_obtHmrWKP2qP-KvAV-Tg4TBGbm7CMVsuq3N9"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n  * "
+  },
+  {
+   "type": "text",
+   "text": "**化学/材料领域**何刚教授团队在紫精光催化激发态动力学调控以及空间共轭紫精环蕃单分子电子学领域连续取得重要成果",
+   "citations": [
+    {
+     "cited_text": "**化学/材料领域**何刚教授团队在紫精光催化激发态动力学调控以及空间共轭紫精环蕃单分子电子学领域连续取得重要成果",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2QRn_WEdfQqGbqTcBDCDS-fXWGMee7e_NEETACjSHUtmkT2oIizSnx85TUEaO4C666Nm_Ah9Hf4t_obtHmrWKP2qP-KvAV-Tg4TBGbm7CMVsuq3N9"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n* **医学健康领域**：\n  * "
+  },
+  {
+   "type": "text",
+   "text": "西安交大基础医学院丁毅团队、口腔医院赵华翔团队联合北京大学相关科研团队，共同发现 HER2 缺陷可导致新型发育性综合征",
+   "citations": [
+    {
+     "cited_text": "西安交大基础医学院丁毅团队、口腔医院赵华翔团队联合北京大学相关科研团队，共同发现 HER2 缺陷可导致新型发育性综合征",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGopYdMrWOJ7Yl8i8NqUt1EOkmotCYFqk5oSJCycUuqpalibRR9KxN1mOQGMIwt0HuL8FmQuOBoQuEUzfOnd_tXFelHTlXVcLLRrSdSuQ=="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n\n---\n\n### 二、 学术会议与前沿论坛\n* **主办“智能装备与具身智能前沿论坛”**：\n  * "
+  },
+  {
+   "type": "text",
+   "text": "由西安交大主办，校长张立群院士担任名誉主席，中国工程院院士卢秉恒、蒋庄德担任大会主席，多位两院院士及海内外学者参会，共同探讨智能制造、机器人与具身智能技术前沿",
+   "citations": [
+    {
+     "cited_text": "由西安交大主办，校长张立群院士担任名誉主席，中国工程院院士卢秉恒、蒋庄德担任大会主席，多位两院院士及海内外学者参会，共同探讨智能制造、机器人与具身智能技术前沿",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDlEf90-DbfAWtJBrUI0WA3aIFOQNTQKYFYimhV3duXmQ0a7HPXGJAxx8eoK2MBNEdqhS2pfY-drTU7spnsi7vwtTgNaEjnt8_n14XvR517sXD2kkj_g=="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n\n---\n\n### 三、 产教融合与卓越人才培养\n* **卓越工程师培养成效显著**：\n  * "
+  },
+  {
+   "type": "text",
+   "text": "教育部推进会上正式发布名单，西安交通大学连续三年上榜全国卓越工程师培养改革优秀案例，并首获优秀实践成果",
+   "citations": [
+    {
+     "cited_text": "教育部推进会上正式发布名单，西安交通大学连续三年上榜全国卓越工程师培养改革优秀案例，并首获优秀实践成果",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2QRn_WEdfQqGbqTcBDCDS-fXWGMee7e_NEETACjSHUtmkT2oIizSnx85TUEaO4C666Nm_Ah9Hf4t_obtHmrWKP2qP-KvAV-Tg4TBGbm7CMVsuq3N9"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n* **创新港深化校企协同**：\n  * "
+  },
+  {
+   "type": "text",
+   "text": "金属材料强度全国重点实验室等联合特变电工在创新港开展规模化、体系化员工培训",
+   "citations": [
+    {
+     "cited_text": "金属材料强度全国重点实验室等联合特变电工在创新港开展规模化、体系化员工培训",
+     "title": "thecover.cn",
+     "type": "web_search_result_location",
+     "url": "https://www.thecover.cn/news/8GdDN26M9LSH90qSdq8Jkw=="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n  * "
+  },
+  {
+   "type": "text",
+   "text": "联合南瑞集团打造新型电力系统联合研发中心，以“科学家+工程师+研究生”团队模式落地多项技术转化",
+   "citations": [
+    {
+     "cited_text": "联合南瑞集团打造新型电力系统联合研发中心，以“科学家+工程师+研究生”团队模式落地多项技术转化",
+     "title": "thecover.cn",
+     "type": "web_search_result_location",
+     "url": "https://www.thecover.cn/news/8GdDN26M9LSH90qSdq8Jkw=="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n\n---\n\n### 四、 学校重要治理与工作动态\n* **巡视与党建工作**：\n  * "
+  },
+  {
+   "type": "text",
+   "text": "中央第九巡视组巡视西安交通大学党委工作动员会召开，开展深入巡视督导工作",
+   "citations": [
+    {
+     "cited_text": "中央第九巡视组巡视西安交通大学党委工作动员会召开，开展深入巡视督导工作",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHrnldYFDnLB5kVVmaKROL96--JEoDRm3J-bW5Z0_YuJ1yuc0sTRNjkMN0lwacIto2XFEl1hR4t2OrYozU4-LcqnMwggbaqEHEYIIfCU8="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n  * "
+  },
+  {
+   "type": "text",
+   "text": "干部师生开展多层级专题学习研讨，聚焦西迁精神传承与教育强国建设",
+   "citations": [
+    {
+     "cited_text": "干部师生开展多层级专题学习研讨，聚焦西迁精神传承与教育强国建设",
+     "title": "xjtu.edu.cn",
+     "type": "web_search_result_location",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHrnldYFDnLB5kVVmaKROL96--JEoDRm3J-bW5Z0_YuJ1yuc0sTRNjkMN0lwacIto2XFEl1hR4t2OrYozU4-LcqnMwggbaqEHEYIIfCU8="
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "。\n\n---\n\n*如需查阅更多科研成果论文原文或各学院最新通知，可直接访问[西安交通大学新闻网](http://news.xjtu.edu.cn)获取官方详细通报。*"
+  }
+ ],
+ "stop_reason": "end_turn",
+ "stop_sequence": null,
+ "usage": {
+  "input_tokens": 137,
+  "output_tokens": 1104,
+  "server_tool_use": {
+   "web_search_requests": 1
+  }
+ }
+}

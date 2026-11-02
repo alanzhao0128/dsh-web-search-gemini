@@ -1,0 +1,9 @@
+# dsh-web-search-gemini bundle layer.
+#
+# The row is inserted without configuration so a fresh install stays inert
+# (no baseURL → the cpa-gemini provider stays unavailable).
+# Override this row (same id) in your profile's cordis.patch.yml with your
+# CLIProxyAPI baseURL and key reference, as documented in README.md.
+- insert:
+    - id: web-search-gemini
+      name: "@alanzhao/dsh-web-search-gemini"

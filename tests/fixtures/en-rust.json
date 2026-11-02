@@ -1,0 +1,227 @@
+{
+ "id": "OvTnar7bBc7lkdUPytjk6A8",
+ "type": "message",
+ "role": "assistant",
+ "model": "gemini-3.8-flash-n",
+ "content": [
+  {
+   "type": "server_tool_use",
+   "id": "srvtoolu_1793586244384012653",
+   "name": "web_search",
+   "input": {
+    "query": "Rust 2026 edition release date"
+   }
+  },
+  {
+   "type": "web_search_tool_result",
+   "tool_use_id": "srvtoolu_1793586244384012653",
+   "content": [
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "endoflife.date",
+     "url": "https://endoflife.date/rust"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "rust-lang.org",
+     "url": "https://internals.rust-lang.org/t/we-have-only-two-years-to-prepare-the-rust-2027-edition/22494"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "physgun.com",
+     "url": "https://physgun.com/blog/game-hosting/rust/rust-2026-roadmap-upcoming-features/"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "bisecthosting.com",
+     "url": "https://www.bisecthosting.com/blog/rust-roadmap-2026-new-features-mechanics-updates-changes"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "bisecthosting.com",
+     "url": "https://www.bisecthosting.com/blog/rust-september-2026-wipe-update-release-date-patch-notes-hqm-node-honey-bandage-tc-upkeep"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "rustfront.com",
+     "url": "https://rustfront.com/guides/coming-back-to-rust-2026"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "facepunch.com",
+     "url": "https://rust.facepunch.com/roadmap/"
+    },
+    {
+     "type": "web_search_result",
+     "page_age": null,
+     "title": "caseway.net",
+     "url": "https://caseway.net/blog/en/roadmap-rust-2026-2027"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "There is **no official \"Rust 2026 Edition.\"** Depending on whether you are referring to the programming language or the video game, here is the relevant context:\n\n---\n\n### 1. The Rust Programming Language\n"
+  },
+  {
+   "type": "text",
+   "text": "The Rust language releases **editions** on a three-year cadence to introduce opt-in language changes that might otherwise break backwards compatibility",
+   "citations": [
+    {
+     "cited_text": "The Rust language releases **editions** on a three-year cadence to introduce opt-in language changes that might otherwise break backwards compatibility",
+     "title": "endoflife.date",
+     "type": "web_search_result_location",
+     "url": "https://endoflife.date/rust"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ":\n* "
+  },
+  {
+   "type": "text",
+   "text": "**Rust 2015:** Released alongside Rust 1.0 (May 2015)",
+   "citations": [
+    {
+     "cited_text": "**Rust 2015:** Released alongside Rust 1.0 (May 2015)",
+     "title": "endoflife.date",
+     "type": "web_search_result_location",
+     "url": "https://endoflife.date/rust"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ".\n* "
+  },
+  {
+   "type": "text",
+   "text": "**Rust 2018:** Released alongside Rust 1.31 (December 2018)",
+   "citations": [
+    {
+     "cited_text": "**Rust 2018:** Released alongside Rust 1.31 (December 2018)",
+     "title": "endoflife.date",
+     "type": "web_search_result_location",
+     "url": "https://endoflife.date/rust"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ".\n* "
+  },
+  {
+   "type": "text",
+   "text": "**Rust 2021:** Released alongside Rust 1.56 (October 2021)",
+   "citations": [
+    {
+     "cited_text": "**Rust 2021:** Released alongside Rust 1.56 (October 2021)",
+     "title": "endoflife.date",
+     "type": "web_search_result_location",
+     "url": "https://endoflife.date/rust"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ".\n* "
+  },
+  {
+   "type": "text",
+   "text": "**Rust 2024:** Released alongside Rust 1.85 (February 2025)",
+   "citations": [
+    {
+     "cited_text": "**Rust 2024:** Released alongside Rust 1.85 (February 2025)",
+     "title": "endoflife.date",
+     "type": "web_search_result_location",
+     "url": "https://endoflife.date/rust"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ".\n\n"
+  },
+  {
+   "type": "text",
+   "text": "Because of this three-year cycle, the edition following Rust 2024 will be **Rust 2027**, which is anticipated around late 2027 or early 2028",
+   "citations": [
+    {
+     "cited_text": "Because of this three-year cycle, the edition following Rust 2024 will be **Rust 2027**, which is anticipated around late 2027 or early 2028",
+     "title": "rust-lang.org",
+     "type": "web_search_result_location",
+     "url": "https://internals.rust-lang.org/t/we-have-only-two-years-to-prepare-the-rust-2027-edition/22494"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ". \n\n---\n\n### 2. *Rust* (Video Game by Facepunch Studios)\n"
+  },
+  {
+   "type": "text",
+   "text": "The survival game *Rust* does not release numbered yearly editions",
+   "citations": [
+    {
+     "cited_text": "The survival game *Rust* does not release numbered yearly editions",
+     "title": "physgun.com",
+     "type": "web_search_result_location",
+     "url": "https://physgun.com/blog/game-hosting/rust/rust-2026-roadmap-upcoming-features/"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ". Instead, it follows a continuous development model:\n* "
+  },
+  {
+   "type": "text",
+   "text": "**Monthly Forced Wipes/Updates:** Arrive regularly on the **first Thursday of every month**",
+   "citations": [
+    {
+     "cited_text": "**Monthly Forced Wipes/Updates:** Arrive regularly on the **first Thursday of every month**",
+     "title": "bisecthosting.com",
+     "type": "web_search_result_location",
+     "url": "https://www.bisecthosting.com/blog/rust-september-2026-wipe-update-release-date-patch-notes-hqm-node-honey-bandage-tc-upkeep"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": ".\n* "
+  },
+  {
+   "type": "text",
+   "text": "**Roadmap:** Content updates (such as modular naval updates, terrain refreshes, and animal husbandry) are distributed quarterly throughout the year rather than packaged as an annual edition",
+   "citations": [
+    {
+     "cited_text": "**Roadmap:** Content updates (such as modular naval updates, terrain refreshes, and animal husbandry) are distributed quarterly throughout the year rather than packaged as an annual edition",
+     "title": "facepunch.com",
+     "type": "web_search_result_location",
+     "url": "https://rust.facepunch.com/roadmap/"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "text": "."
+  }
+ ],
+ "stop_reason": "end_turn",
+ "stop_sequence": null,
+ "usage": {
+  "input_tokens": 281,
+  "output_tokens": 854,
+  "server_tool_use": {
+   "web_search_requests": 1
+  }
+ }
+}
