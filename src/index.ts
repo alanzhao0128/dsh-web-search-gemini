@@ -5,21 +5,12 @@
  * @module dsh-web-search-gemini
  */
 import type { Context, Volatile } from '@deepseek-ai/cordis'
-import type {} from '@deepseek-ai/dsh-agent'
-import type {} from '@deepseek-ai/dsh-session'
 import type {} from '@deepseek-ai/dsh-web'
 import { credentialRef } from '@deepseek-ai/dsh-credentials'
 import { launchEnvironmentOf } from '@deepseek-ai/dsh-launch-environment'
 import z from '@deepseek-ai/schemastery'
 import { GeminiSearchProvider } from './provider.js'
 import type { ProviderOptions } from './provider.js'
-
-declare module '@deepseek-ai/dsh-session' {
-  interface SessionEventMap {
-    /** The Messages request this provider dispatched (no headers or keys). */
-    'web/cpa-gemini-search-request': { endpoint: string; apiVersion: string; body: unknown }
-  }
-}
 
 export { GeminiSearchProvider, PROVIDER_ID } from './provider.js'
 export type { ProviderOptions } from './provider.js'
@@ -85,9 +76,8 @@ function resolveOptions(ctx: Context, config: VolatileConfig): ProviderOptions {
     includeAnswer: config.includeAnswer.get(),
     answerMaxChars: config.answerMaxChars.get(),
     snippetMaxChars: config.snippetMaxChars.get(),
-    recordRequest: (request) => {
-      ctx.get('agents')?.currentInitiator()?.session.append('web/cpa-gemini-search-request', request)
-    },
+    // Deliberately no session event: an out-of-vocabulary event not marked `ignorable`
+    // makes newer DSH builds refuse to load the whole session (see CHANGELOG 0.1.2).
   }
 }
 

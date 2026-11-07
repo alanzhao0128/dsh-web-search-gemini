@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2 — 2026-11-07
+
+- **修复：** 不再写 `web/cpa-gemini-search-request` 会话事件。新版 DSH 读取日志时只认内置事件白名单，白名单外的事件必须带 `"ignorable": true`，否则整个会话报「历史加载失败：… unknown to this harness and not marked ignorable」。该事件只是调试记录，对搜索功能无影响，故直接移除（同时去掉对应的 `SessionEventMap` 声明和不再需要的 `dsh-agent`/`dsh-session` 类型引用）。
+- 迁移：0.1.0–0.1.1 写出的旧会话如已无法加载，把日志里该事件所在行末尾的 `}` 改成 `,"ignorable":true}` 即可（日志为多帧 zstd，需逐帧重新压缩并保留校验和）。
+- `ProviderOptions.recordRequest` 仍保留为可选钩子，插件本身不再使用。
+
 ## 0.1.1 — 2026-11-02
 
 - 搜索 prompt 改为只列来源陈述的关键事实（要点式，保留全部数字、日期、名称，不写表格、标题和背景）。实测关键数字保留不变，可见总结更短，平均耗时略降。

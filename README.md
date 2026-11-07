@@ -16,7 +16,7 @@
 
 跳转链接的还原只读取 `location` 响应头，不访问目标站点；只处理 `vertexaisearch.cloud.google.com` 的链接；失败或超时保留原链接，不影响搜索。
 
-每次搜索会在会话里记一条 `web/cpa-gemini-search-request` 事件（endpoint、apiVersion、请求体，不含密钥）。
+插件不往会话日志写任何自定义事件。0.1.0–0.1.1 曾写 `web/cpa-gemini-search-request`，新版 DSH 会因它不在内置事件白名单且未标 `ignorable` 而拒绝加载整个会话，0.1.2 起已移除。若你有旧版写出的会话加载失败，给该事件补上 `"ignorable":true` 即可（见 CHANGELOG）。
 
 ## 前提
 
